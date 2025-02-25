@@ -1,0 +1,23 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+
+		{
+			"type": "cppvsdbg",
+			"request": "launch",
+			"name": "Launch",
+			"program": "${workspaceFolder}/target/debug/${input:programName}.exe",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": "rust: cargo build"
+		}
+	],
+	"inputs": [
+		{
+			"id": "programName",
+			"type": "promptString",
+			"description": "Enter the program name",
+			"default": "leetcode_solve"
+		}
+	]
+}
