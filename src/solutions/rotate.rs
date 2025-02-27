@@ -1,4 +1,5 @@
 
+#[allow(dead_code)]
 pub fn rotate(nums: &mut Vec<i32>, k: i32) {
     if k == 0 {return;}
     let len = nums.len();
@@ -11,7 +12,7 @@ pub fn rotate(nums: &mut Vec<i32>, k: i32) {
 }
 
 #[cfg(test)]
-mod tests {
+mod test {
     use super::*;
     #[test]
     fn test1() {
